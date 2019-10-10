@@ -27,7 +27,7 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
-import MathType from '@wiris/mathtype-ckeditor5';
+import Mathematics from 'ckeditor5-math/src/math';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -54,7 +54,7 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	MathType
+	Mathematics
 ];
 
 // Editor configuration.
@@ -72,7 +72,7 @@ ClassicEditor.defaultConfig = {
 			'blockQuote',
 			'insertTable',
 			'mediaEmbed',
-			'MathType',
+			'math',
 			'undo',
 			'redo'
 		]
